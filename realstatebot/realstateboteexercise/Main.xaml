@@ -1,0 +1,297 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1793,2381" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Platform.SyncObjects</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>System.Linq.Expressions</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.ExtractData</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
+      <x:String>UiPath.Platform.ResourceHandling</x:String>
+      <x:String>UiPath.CSV.Activities</x:String>
+      <x:String>UiPath.CSV</x:String>
+      <x:String>UiPath.Mail</x:String>
+      <x:String>UiPath.Mail.SMTP.Activities</x:String>
+      <x:String>UiPath.Mail.Activities</x:String>
+      <x:String>UiPath.Mail.Outlook.Activities</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Data.SqlClient</AssemblyReference>
+      <AssemblyReference>System.Private.Xml</AssemblyReference>
+      <AssemblyReference>System.Linq.Async</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>UiPath.Mail</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities.Design</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="main Real state bot" sap:VirtualizedContainerService.HintSize="592,2316" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="x:String" Default="Magic: The Gathering" Name="productName" />
+      <Variable x:TypeArguments="sd:DataTable" Default="[New System.Data.DataTable]" Name="ExtractDataTable" />
+      <Variable x:TypeArguments="x:String" Name="vStrDT" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="navegacion" sap:VirtualizedContainerService.HintSize="530,2228" sap2010:WorkflowViewState.IdRef="NApplicationCard_4" InteractionMode="DebuggerApi" ScopeGuid="bf7c1822-8a90-4351-bd1c-d1f1669a93ed" Version="V2">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="496,1988" sap2010:WorkflowViewState.IdRef="Sequence_4">
+            <Sequence.Variables>
+              <Variable x:TypeArguments="x:String" Default="amimedicenrufo@gmail.com" Name="destinatario" />
+            </Sequence.Variables>
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Todas las categorías'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="434,286" sap2010:WorkflowViewState.IdRef="NTypeInto_2" ScopeIdentifier="bf7c1822-8a90-4351-bd1c-d1f1669a93ed" Text="[productName]" Version="V3">
+              <uix:NTypeInto.Target>
+                <uix:TargetAnchorable BrowserURL="https://www.amazon.com.mx/?&amp;tag=hydramzkw0mx-20&amp;ref=pd_sl_7l5x99tvs0_e&amp;adgrpid=150779881141&amp;hvpone=&amp;hvptwo=&amp;hvadid=675207151829&amp;hvpos=&amp;hvnetw=g&amp;hvrand=1802311167425735836&amp;hvqmt=e&amp;hvdev=c&amp;hvdvcmdl=&amp;hvlocint=&amp;hvlocphy=1010019&amp;hvtargid=kwd-10573980&amp;hydadcr=13958_13404205&amp;gad_source=1" CVScreenId="031ad7ab-a599-41c8-9580-28f16a9bfdde" CvTextArea="569, 116, 164, 14" CvTextArgument="Buscar Amazon.com.mx" CvType="Text" DesignTimeRectangle="562, 106, 923, 38" DesignTimeScaleFactor="1" ElementType="InputBox" FullSelectorArgument="&lt;webctrl id='twotabsearchtextbox' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='twotabsearchtextbox' tag='INPUT' type='text' class='nav-input nav-progressive-attribute' placeholder='Buscar Amazon.com.mx' aaname='Buscar Amazon.com.mx' /&gt;" Guid="660ce112-ade1-4ba6-ba2f-faed1289bad5" InformativeScreenshot="e97959e8bf44f6906e54390a7eec33cc.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Amazon.com.mx: Precios bajos - Envío rápido - Millones de productos' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target CVScreenId="031ad7ab-a599-41c8-9580-28f16a9bfdde" CvTextArea="429, 117, 111, 15" CvTextArgument="Todas las categorias" CvType="Text" DesignTimeRectangle="430, 109, 110, 33" ElementType="Text" FullSelectorArgument="&lt;webctrl id='nav-search-label-id' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl id='nav-search-label-id' tag='SPAN' type='' class='nav-search-label nav-progressive-content' aaname='Todas las categorías' check:innerText='Todas las categorías' /&gt;" Guid="c4937247-3e3f-4397-83e7-46fa69392e89" SearchSteps="FuzzySelector, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NTypeInto.Target>
+              <uix:NTypeInto.VerifyOptions>
+                <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionTypeIntoOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionTypeIntoOptions.Retry>
+                  <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                </uix:VerifyExecutionTypeIntoOptions>
+              </uix:NTypeInto.VerifyOptions>
+            </uix:NTypeInto>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Ir'" sap:VirtualizedContainerService.HintSize="434,225" sap2010:WorkflowViewState.IdRef="NClick_20" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="bf7c1822-8a90-4351-bd1c-d1f1669a93ed" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://www.amazon.com.mx/?&amp;tag=hydramzkw0mx-20&amp;ref=pd_sl_7l5x99tvs0_e&amp;adgrpid=150779881141&amp;hvpone=&amp;hvptwo=&amp;hvadid=675207151829&amp;hvpos=&amp;hvnetw=g&amp;hvrand=1802311167425735836&amp;hvqmt=e&amp;hvdev=c&amp;hvdvcmdl=&amp;hvlocint=&amp;hvlocphy=1010019&amp;hvtargid=kwd-10573980&amp;hydadcr=13958_13404205&amp;gad_source=1" CVScreenId="4ac44630-f6c2-4108-913a-c5e0e4ee40df" CvElementArea="1483, 103, 48, 42" CvType="Button" DesignTimeRectangle="1485, 105, 45, 40" DesignTimeScaleFactor="1" ElementType="Button" FullSelectorArgument="&lt;webctrl id='nav-search-submit-button' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='nav-search-submit-button' tag='INPUT' type='submit' class='nav-input nav-progressive-attribute' aaname='Ir' check:text='Ir' /&gt;" Guid="84bdbf34-27aa-4de9-a0f1-3ea7de923a48" InformativeScreenshot="f6a7d515694bb6a1b512ec2286ff9cc3.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Amazon.com.mx: Precios bajos - Envío rápido - Millones de productos' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target CVScreenId="4ac44630-f6c2-4108-913a-c5e0e4ee40df" CvElementArea="1670, 123, 19, 19" CvTextArea="1565, 124, 106, 13" CvTextArgument="Cuenta y Listas" CvType="ArrowButton" DesignTimeRectangle="1567, 124, 116, 15" FullSelectorArgument="&lt;webctrl aaname='Cuenta y Listas   ' parentid='nav-link-accountList' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Cuenta y Listas   ' parentid='nav-link-accountList' tag='SPAN' type='' class='nav-line-2 ' check:innerText='Cuenta y Listas' /&gt;" Guid="f0b4a7f7-cc6b-4dda-8cbf-9b3127e0c5bd" SearchSteps="FuzzySelector, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NClick.Target>
+              <uix:NClick.VerifyOptions>
+                <uix:VerifyExecutionOptions DisplayName="Button 'Ir'" Mode="Appears">
+                  <uix:VerifyExecutionOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionOptions.Retry>
+                  <uix:VerifyExecutionOptions.Target>
+                    <uix:TargetAnchorable BrowserURL="https://www.amazon.com.mx/?&amp;tag=hydramzkw0mx-20&amp;ref=pd_sl_7l5x99tvs0_e&amp;adgrpid=150779881141&amp;hvpone=&amp;hvptwo=&amp;hvadid=675207151829&amp;hvpos=&amp;hvnetw=g&amp;hvrand=1802311167425735836&amp;hvqmt=e&amp;hvdev=c&amp;hvdvcmdl=&amp;hvlocint=&amp;hvlocphy=1010019&amp;hvtargid=kwd-10573980&amp;hydadcr=13958_13404205&amp;gad_source=1" CVScreenId="4ac44630-f6c2-4108-913a-c5e0e4ee40df" CvElementArea="1483, 103, 48, 42" CvType="Button" DesignTimeRectangle="1485, 105, 45, 40" DesignTimeScaleFactor="1" ElementType="Button" FullSelectorArgument="&lt;webctrl id='nav-search-submit-button' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='nav-search-submit-button' tag='INPUT' type='submit' class='nav-input nav-progressive-attribute' aaname='Ir' check:text='Ir' /&gt;" Guid="c93f533a-6324-4d2c-91a4-d7bb2961f302" InformativeScreenshot="9729f86ed6b606c6c7a6c49a7f09ae6a.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Amazon.com.mx: Precios bajos - Envío rápido - Millones de productos' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
+                      <uix:TargetAnchorable.Anchors>
+                        <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                          <uix:Target CVScreenId="4ac44630-f6c2-4108-913a-c5e0e4ee40df" CvElementArea="488, 103, 994, 43" CvType="InputBox" DesignTimeRectangle="562, 106, 923, 38" ElementType="InputBox" FullSelectorArgument="&lt;webctrl id='twotabsearchtextbox' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='twotabsearchtextbox' tag='INPUT' type='text' class='nav-input nav-progressive-attribute' placeholder='Buscar Amazon.com.mx' aaname='Buscar Amazon.com.mx' /&gt;" Guid="071309c4-bd44-43b9-aefc-07ee64ef70c3" SearchSteps="FuzzySelector, CV" />
+                        </scg:List>
+                      </uix:TargetAnchorable.Anchors>
+                    </uix:TargetAnchorable>
+                  </uix:VerifyExecutionOptions.Target>
+                  <uix:VerifyExecutionOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionOptions.Timeout>
+                </uix:VerifyExecutionOptions>
+              </uix:NClick.VerifyOptions>
+            </uix:NClick>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Marcas'" sap:VirtualizedContainerService.HintSize="434,225" sap2010:WorkflowViewState.IdRef="NClick_22" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="bf7c1822-8a90-4351-bd1c-d1f1669a93ed" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://www.amazon.com.mx/s?k=Magic%3A+The+Gathering&amp;__mk_es_MX=%C3%85M%C3%85%C5%BD%C3%95%C3%91&amp;crid=38RYI8YDZENT5&amp;sprefix=magic+the+gathering%2Caps%2C350&amp;ref=nb_sb_noss_2" CVScreenId="96b24eeb-edcb-4cac-9703-29f6fc8d5fdf" CvElementArea="66, 466, 19, 19" CvType="CheckBox" DesignTimeRectangle="68, 468, 16, 16" DesignTimeScaleFactor="1" FullSelectorArgument="&lt;webctrl parentid='p_123/359217' tag='I' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='p_123/359217' tag='I' type='' class='a-icon a-icon-checkbox' aaname='' /&gt;" Guid="9da5cd8a-eecb-464c-81b3-64f88da44c51" InformativeScreenshot="fefa35276a9b0f19e984a39eaf2a9691.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Amazon.com.mx : Magic: The Gathering' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target CVScreenId="96b24eeb-edcb-4cac-9703-29f6fc8d5fdf" CvTextArea="67, 447, 47, 13" CvTextArgument="Marcas" CvType="Text" DesignTimeRectangle="68, 445, 45, 18" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='Marcas' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Marcas' tag='SPAN' type='' class='a-size-base a-color-base puis-bold-weight-text' check:innerText='Marcas' /&gt;" Guid="a0607cc2-cafa-4ed2-b560-bc2b553427a3" SearchSteps="FuzzySelector, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NClick.Target>
+              <uix:NClick.VerifyOptions>
+                <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionOptions.Retry>
+                  <uix:VerifyExecutionOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionOptions.Timeout>
+                </uix:VerifyExecutionOptions>
+              </uix:NClick.VerifyOptions>
+            </uix:NClick>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Destacados'" sap:VirtualizedContainerService.HintSize="434,225" sap2010:WorkflowViewState.IdRef="NClick_26" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="bf7c1822-8a90-4351-bd1c-d1f1669a93ed" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://www.amazon.com.mx/s?k=Magic%3A+The+Gathering&amp;rh=n%3A11260442011%2Cn%3A23566061011&amp;dc&amp;ds=v1%3Axama8l6a9gR2cVM7QumPelxJPP%2BNX6AYm4RGidPAaCg&amp;__mk_es_MX=%C3%85M%C3%85%C5%BD%C3%95%C3%91&amp;crid=3PVVBIQFCHJ7D&amp;qid=1722040453&amp;rnid=15997893011&amp;sprefix=magic+the+gathering%2Caps%2C367&amp;ref=sr_nr_n_3" DesignTimeRectangle="1836, 243, 10, 8" DesignTimeScaleFactor="1" FullSelectorArgument="&lt;webctrl parentid='a-autoid-0' tag='I' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='a-autoid-0' tag='I' type='' class='a-icon a-icon-dropdown' aaname='' /&gt;" Guid="e8cd505a-27a1-431a-bfeb-213e5467b114" InformativeScreenshot="fbd7328fa766a66944dd4cc135b000ab.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Amazon.com.mx : Magic: The Gathering' /&gt;" SearchSteps="FuzzySelector" Version="V4" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target CVScreenId="75118cdf-e09e-4768-ad8a-eed89b96078c" CvElementArea="1694, 233, 160, 27" CvTextArea="1773, 241, 58, 11" CvTextArgument="Destacados" CvType="Button" DesignTimeRectangle="1774, 240, 57, 14" ElementType="Text" FullSelectorArgument="&lt;webctrl class='a-dropdown-prompt' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl class='a-dropdown-prompt' tag='SPAN' type='' aaname='Destacados' check:innerText='Destacados' /&gt;" Guid="d024d0a8-c0e4-45f0-90a4-0adb17398283" SearchSteps="FuzzySelector, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NClick.Target>
+              <uix:NClick.VerifyOptions>
+                <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionOptions.Retry>
+                  <uix:VerifyExecutionOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionOptions.Timeout>
+                </uix:VerifyExecutionOptions>
+              </uix:NClick.VerifyOptions>
+            </uix:NClick>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Precio: de menor a mayor'" sap:VirtualizedContainerService.HintSize="434,225" sap2010:WorkflowViewState.IdRef="NClick_27" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="bf7c1822-8a90-4351-bd1c-d1f1669a93ed" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://www.amazon.com.mx/s?k=Magic%3A+The+Gathering&amp;rh=n%3A11260442011%2Cn%3A23566061011&amp;dc&amp;ds=v1%3Axama8l6a9gR2cVM7QumPelxJPP%2BNX6AYm4RGidPAaCg&amp;__mk_es_MX=%C3%85M%C3%85%C5%BD%C3%95%C3%91&amp;crid=3PVVBIQFCHJ7D&amp;qid=1722040453&amp;rnid=15997893011&amp;sprefix=magic+the+gathering%2Caps%2C367&amp;ref=sr_nr_n_3" CVScreenId="4da412d9-106c-4d96-a735-7b230b3258a7" CvTextArea="1653, 274, 163, 16" CvTextArgument="Precio: de menor a mayor" CvType="Text" DesignTimeRectangle="1640, 268, 212, 25" DesignTimeScaleFactor="1" ElementType="Text" FullSelectorArgument="&lt;webctrl id='s-result-sort-select_1' tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl id='s-result-sort-select_1' tag='A' type='' class='a-dropdown-link' aaname='Precio: de menor a mayor' check:innerText='Precio: de menor a mayor' /&gt;" Guid="e08369d3-dd39-4351-ba27-5d3fa256dc1f" InformativeScreenshot="139c7e142a93957eef82267317c7cb5c.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Amazon.com.mx : Magic: The Gathering' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target CVScreenId="4da412d9-106c-4d96-a735-7b230b3258a7" CvTextArea="1653, 249, 73, 13" CvTextArgument="Destacados" CvType="Text" DesignTimeRectangle="1640, 243, 212, 25" ElementType="Text" FullSelectorArgument="&lt;webctrl id='s-result-sort-select_0' tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl id='s-result-sort-select_0' tag='A' type='' class='a-dropdown-link a-active' aaname='Destacados' check:innerText='Destacados' /&gt;" Guid="8f38e7ab-85c3-42dc-adf3-52dcb3077308" SearchSteps="FuzzySelector, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NClick.Target>
+              <uix:NClick.VerifyOptions>
+                <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionOptions.Retry>
+                  <uix:VerifyExecutionOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionOptions.Timeout>
+                </uix:VerifyExecutionOptions>
+              </uix:NClick.VerifyOptions>
+            </uix:NClick>
+            <uix:NExtractData AppendResults="False" ContinueOnError="True" DataTable="[ExtractDataTable]" DisplayName="Extract Table Data" ExtractDataSettings="&lt;Table xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema' Type='Structured' AddCvHeader='true' IsScrollEnabled='false'&gt;&#xD;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column0' Name='Nombre'&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xD;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xD;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xD;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xD;&#xA;&#x9;&lt;/Column&gt;&#xD;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column1' Name='New column 1'&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xD;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xD;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xD;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xD;&#xA;&#x9;&lt;/Column&gt;&#xD;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column2' Name='New column 2 Url'&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xD;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xD;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;true&lt;/CanExtractSimilar&gt;&#xD;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xD;&#xA;&#x9;&lt;/Column&gt;&#xD;&#xA;&#x9;&lt;Column xsi:type='DataNextLink' /&gt;&#xD;&#xA;&lt;/Table&gt;" ExtractMetadata="&lt;extract&gt;&lt;row exact='1'&gt;&lt;webctrl tag='div' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='span' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;/row&gt;&lt;column exact='1' name='Column0' attr='fulltext'&gt;&lt;webctrl tag='div' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='span' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='h2' idx='1' /&gt;&lt;/column&gt;&lt;column exact='1' name='Column1' attr='fulltext'&gt;&lt;webctrl tag='div' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='span' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;/column&gt;&lt;column exact='1' name='Column2' attr='href'&gt;&lt;webctrl tag='div' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='span' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='h2' idx='1' /&gt;&lt;webctrl tag='a' idx='1' /&gt;&lt;webctrl tag='span' idx='1' /&gt;&lt;/column&gt;&lt;/extract&gt;" sap:VirtualizedContainerService.HintSize="434,189" sap2010:WorkflowViewState.IdRef="NExtractData_1" LimitExtractionTo="None" MaximumResults="0" ScopeIdentifier="bf7c1822-8a90-4351-bd1c-d1f1669a93ed" Version="V3">
+              <uix:NExtractData.NextLink>
+                <uix:TargetAnchorable BrowserURL="https://www.amazon.com.mx/s?k=Magic%3A+The+Gathering&amp;i=toys&amp;rh=n%3A11260442011%2Cp_123%3A359217&amp;s=price-asc-rank&amp;dc&amp;ds=v1%3Af589dtuNCTs53LHMV1sHogH38O7GyC196QkD3GRAAok&amp;__mk_es_MX=%C3%85M%C3%85%C5%BD%C3%95%C3%91&amp;crid=1XRCI4421D7AW&amp;qid=1722040758&amp;rnid=119962389011&amp;sprefix=magic+the+gathering%2Caps%2C350&amp;ref=sr_st_price-asc-rank" CVScreenId="5981d3ac-625f-4027-a086-3c425c333038" CvElementArea="1295, 655, 18, 21" CvTextArea="1234, 659, 61, 16" CvTextArgument="Siguiente" CvType="ArrowButton" DesignTimeRectangle="1222, 642, 100, 48" DesignTimeScaleFactor="1" ElementType="Text" FullSelectorArgument="&lt;webctrl aria-label='Ir a la página siguiente, página 2' tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl aria-label='Ir a la página siguiente, página 2' tag='A' type='' class='s-pagination-item s-pagination-next s-pagination-button s-pagination-separator' aaname='Siguiente' check:innerText='Siguiente' /&gt;" Guid="1a19c4e0-ea21-439d-8df2-4b0967db0049" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Amazon.com.mx : Magic: The Gathering' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target CVScreenId="5981d3ac-625f-4027-a086-3c425c333038" CvElementArea="1295, 655, 18, 21" CvType="ArrowButton" DesignTimeRectangle="1301, 660, 8, 12" ElementType="Icon" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;span&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;span&amp;gt;a&amp;gt;svg' parentid='search' tag='svg' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' parentid='search' tag='svg' class='' aaname='' /&gt;" Guid="ae8cb6bd-e70e-4042-af27-931fe7d5cff2" SearchSteps="FuzzySelector, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NExtractData.NextLink>
+              <uix:NExtractData.Target>
+                <uix:TargetAnchorable BrowserURL="https://www.amazon.com.mx/s?k=Magic%3A+The+Gathering&amp;i=toys&amp;rh=n%3A11260442011%2Cp_123%3A359217&amp;s=price-asc-rank&amp;dc&amp;ds=v1%3Af589dtuNCTs53LHMV1sHogH38O7GyC196QkD3GRAAok&amp;__mk_es_MX=%C3%85M%C3%85%C5%BD%C3%95%C3%91&amp;crid=1XRCI4421D7AW&amp;qid=1722040758&amp;rnid=119962389011&amp;sprefix=magic+the+gathering%2Caps%2C350&amp;ref=sr_st_price-asc-rank" DesignTimeRectangle="363, 289, 1497, 3186" DesignTimeScaleFactor="1" ElementType="InputBox" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;span&amp;gt;div' parentid='search' tag='DIV' /&gt;" Guid="38dca312-bb10-48bd-9a83-d86f3f85f29d" InformativeScreenshot="04f23ee7a178f6147b1266bc6a38aca3.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Amazon.com.mx : Magic: The Gathering' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive" />
+              </uix:NExtractData.Target>
+            </uix:NExtractData>
+            <ui:OutputDataTable DataTable="[ExtractDataTable]" DisplayName="Output Data Table as Text" sap:VirtualizedContainerService.HintSize="434,112" sap2010:WorkflowViewState.IdRef="OutputDataTable_1" Text="[vStrDT]" />
+            <ui:AppendWriteCsvFile PathResource="{x:Null}" AddHeaders="True" CsvAction="Write" DataTable="[ExtractDataTable]" Delimitator="Comma" DelimitatorForViewModel="Comma" DisplayName="Write CSV" FilePath="downloads\Untitled.csv" sap:VirtualizedContainerService.HintSize="434,234" sap2010:WorkflowViewState.IdRef="AppendWriteCsvFile_1" ShouldQuote="True" />
+            <ui:SendMail Bcc="{x:Null}" Cc="{x:Null}" ContinueOnError="{x:Null}" From="{x:Null}" MailMessage="{x:Null}" Name="{x:Null}" ReplyTo="{x:Null}" Result="{x:Null}" SecurePassword="{x:Null}" TimeoutMS="{x:Null}" UseOAuth="{x:Null}" Body="prueba pruebin pruebinski" DisplayName="Send SMTP Mail Message" Email="amimedicenrufo@gmail.com" EnableSSL="True" sap:VirtualizedContainerService.HintSize="434,177" sap2010:WorkflowViewState.IdRef="SendMail_1" IgnoreCRL="False" IsBodyHtml="False" Password="contrasemia" Port="587" SecureConnection="Auto" Server="smtp.gmail.com" Subject="prueba" To="rodrigolnavao@gmail.com">
+              <ui:SendMail.Files>
+                <scg:List x:TypeArguments="InArgument(x:String)" Capacity="4">
+                  <InArgument x:TypeArguments="x:String">
+                    <Literal x:TypeArguments="x:String">downloads\Untitled.csv</Literal>
+                  </InArgument>
+                </scg:List>
+              </ui:SendMail.Files>
+            </ui:SendMail>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="-8, -8, 1936, 1056" BrowserType="Chrome" IconBase64="iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAF5SURBVDhPlVM9S8NQFBW0+QOO2h+gU9vdSbuLNP0HprtDfoBIhYKgWFyFLLpUC10EjbvawcFC4qJDm4CDllQdHHq9JzdfbYLUA4e8d98959738t4cESnMA2afOSuQC40Cg31EkrBtm3Rdp4qqklqtkmEYwUoKDRi4MhZ0u12az+VoYYowzIALg6GMBVqt5gs2ymWyLCuaL+fzQcYEhikDx3H8LkzTpMt2299C2EUG0gbYf6FUikRJZiBtEFaECbo5bjb/ZxAm79Xr/nxb06KY53l+LIG0QaFYjAQ4yOQfQTdTCAy+HJkycIBLfOIQ4AtRhbe1zmajd5fGFt+J+x1hZNBZJfqwEPgbt1sifNwlOoM0NBjcEJ3z8I4XR3E3KXwOiF5aUqy1iEjiDF4vxAS8WpMqvUOiJ2bviKtvSlXkoSDWA4P4Kr89SCJMkMwcB1/qrPATupa8H/4bYHCVGxhNAC0+n8Yd9LliNvzHhOd8wvxGZEYglzWk/AJk0E1AkKBI3AAAAABJRU5ErkJggg==" InformativeScreenshot="594236f504b7046bf6fcac8916dfc47d.jpg" Selector="&lt;html app='chrome.exe' title='Amazon.com.mx: Precios bajos - Envío rápido - Millones de productos' /&gt;" Title="Amazon.com.mx: Precios bajos - Envío rápido - Millones de productos" Url="https://www.amazon.com.mx/?&amp;tag=hydramzkw0mx-20&amp;ref=pd_sl_7l5x99tvs0_e&amp;adgrpid=150779881141&amp;hvpone=&amp;hvptwo=&amp;hvadid=675207151829&amp;hvpos=&amp;hvnetw=g&amp;hvrand=1802311167425735836&amp;hvqmt=e&amp;hvdev=c&amp;hvdvcmdl=&amp;hvlocint=&amp;hvlocphy=1010019&amp;hvtargid=kwd-10573980&amp;hydadcr=13958_13404205&amp;gad_source=1" />
+      </uix:NApplicationCard.TargetApp>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </uix:NApplicationCard>
+  </Sequence>
+</Activity>
